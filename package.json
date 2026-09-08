@@ -4,7 +4,8 @@
   "description": "ts é um superset - adicional ao js onde a a genbte consegue trabalhar com linguagem estatica - trazer mais inteligencia pro nosso codigo.",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "knex": "tsx ./node_modules/knex/bin/cli.js"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +19,10 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "fastify": "^5.10.0",
     "knex": "^3.3.0",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^6.0.1",
+    "zod": "^4.5.4"
   }
 }
