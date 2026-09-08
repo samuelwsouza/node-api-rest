@@ -1,0 +1,25 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "ts é um superset - adicional ao js onde a a genbte consegue trabalhar com linguagem estatica - trazer mais inteligencia pro nosso codigo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^3.0.12",
+    "@types/node": "^26.5.0",
+    "eslint": "^8.57.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "fastify": "^5.10.0",
+    "knex": "^3.3.0",
+    "sqlite3": "^6.0.1"
+  }
+}
