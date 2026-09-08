@@ -2,15 +2,12 @@ import fastify from 'fastify';
 import crypto from 'node:crypto'
 import { knex } from './database';
 import { env } from './env';
+import { transactionRoutes } from './routes/transactions';
 
 const app = fastify()
 
-app.get('/hello', async () => {
-   const transaction = await knex('transactions')
-   .where('amount', 500)
-   .select('*')
-
-   return transaction
+app.register(transactionRoutes, {
+    prefix: 'transactions'
 })
 
 app.listen({ 
@@ -18,7 +15,3 @@ app.listen({
 }).then(() => { 
     console.log('HTTP Server Running!') 
 })
-
-
-// SQLite e um banco SQL relacional -- banco relacionais pra quem quer aprender no inicio e melhor.
-// Bom usar o SQLite agora porque nao e necessario nao subir nenhum banco agora, nem docker.
