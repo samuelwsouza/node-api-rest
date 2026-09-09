@@ -23,3 +23,5 @@
 - [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito subtrairá;
 - [] Deve ser possível identificarmos o usuário entre as requisições;
 - [] O usuário só pode visualizar transações o qual ele criou;
+
+// Cookies sao basicamente formas da gente manter contexto entre reqs, ou seja, no momento que voce acessa um site, esse site jhoje pela LGPD pergunta se voce quer aceitar os cookies, ele salva alguma informacao como um id dentro do meu navegador sem que eu perceba. Isso para validar que a mesma pessoa baseado no ID fez tais requisicoes dentro da aplicacao.
